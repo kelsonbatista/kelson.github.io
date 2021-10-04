@@ -7,15 +7,41 @@ a {
 }
 
 header {
+  background: url(../img/bg01.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .header-main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 30px;
 }
 
 header .header-logo {
+  font-family: Ephesis;
   font-size: 50px;
   font-weight: 900;
+  color: white;
+  border: 2px solid white;
 }
 
 header .header-menu {
   display: flex;
+}
+
+header .header-menu li a {
+  color: black;
+  margin-right: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+header h1 {
+  font-size: 200px;
+  text-align: center;
+  color: white;
+  margin-top: 250px;
 }
