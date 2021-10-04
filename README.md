@@ -1,1 +1,1 @@
-Version 1.0 - Basic structure
+Version 0.0 - Basic structure
