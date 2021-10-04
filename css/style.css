@@ -6,7 +6,16 @@ a {
   text-decoration: none;
 }
 
-header .logo {
+header {
+  display: flex;
+  align-items: center;
+}
+
+header .header-logo {
   font-size: 50px;
   font-weight: 900;
+}
+
+header .header-menu {
+  display: flex;
 }
