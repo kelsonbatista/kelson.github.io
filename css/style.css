@@ -100,10 +100,10 @@ main section .about-me-right {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 1250px) {
 
   main section .wrapper {
-    width: 1728px;
+    width: 1230px;
   }
 
 }
