@@ -1,5 +1,7 @@
 body {
   font-family: 'Geomanist', arial, sans-serif;
+  color: #222;
+  background-color: #eee;
 }
 
 a {
@@ -56,62 +58,48 @@ header p.welcome {
 header .header-headline {
   font-size: 50px;
   text-align: center;
-  margin-top: 150px; 
   color: white;
+  margin-top: 180px;
 }
 
 main section {
-  background-color: #eee;
   height: 100vh;
   width: 100%;
 }
 
 main section .wrapper {
-  background-color: yellow;
   display: flex;
   height: 100vh;
   width: 1728px;
   margin: auto;
-  padding: 50px;
+  padding: 100px 30px;
 }
 
 main section .about-me-right {
   margin-left: 80px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+main section .about-me-right h2 {
+  font-size: 60px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+main section .about-me-right p {
+  font-size: 30px;
+  margin: 50px 0;
+  line-height: 45px;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+main section .about-me-left p {
+  font-size: 120px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 80px;
+  padding: 20px 0;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1366px) {
-
-  main section .wrapper {
-    width: 1230px;
-  }
-
-}
-
-@media only screen and (max-width: 1920px) {
-
-  main section .wrapper {
-    width: 1728px;
-  }
-  
+main section .about-me-left img {
+  margin-bottom: 20px;
+  width: 400px;
+  border: 10px solid #222;
+  border-radius: 0 200px 0 200px;
 }
