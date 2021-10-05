@@ -7,12 +7,13 @@ a {
 }
 
 header {
-  background: url(../img/bg01.jpg) no-repeat center center fixed;
+  /*linear-gradient(to bottom, #000f, #0005)*/
+  background: linear-gradient(to bottom, #0007, #0002), url(../img/bg01.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
 }
 
-header .header-main {
+header .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +21,17 @@ header .header-main {
 }
 
 header .header-logo {
-  font-family: Ephesis;
+  font-family: "Birthstone Bounce";
   font-size: 50px;
   font-weight: 900;
   color: white;
-  border: 2px solid white;
+  border: 3px solid white;
+  border-radius: 100px;
+  width: 75px;
+}
+
+header .header-logo:hover, header p.welcome:hover, header .header-menu li a:hover {
+  color:fuchsia;
 }
 
 header .header-menu {
@@ -32,16 +39,79 @@ header .header-menu {
 }
 
 header .header-menu li a {
-  color: black;
   margin-right: 30px;
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 900;
+  color: white;
 }
 
-header h1 {
-  font-size: 200px;
-  text-align: center;
+header p.welcome {
+  font-size: 170px;
+  font-weight: 900;
+  margin: 40px 0 10px;
   color: white;
-  margin-top: 250px;
+}
+
+header .header-headline {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 150px; 
+  color: white;
+}
+
+main section {
+  background-color: #eee;
+  height: 100vh;
+  width: 100%;
+}
+
+main section .wrapper {
+  background-color: yellow;
+  display: flex;
+  height: 100vh;
+  width: 1728px;
+  margin: auto;
+  padding: 50px;
+}
+
+main section .about-me-right {
+  margin-left: 80px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+  main section .wrapper {
+    width: 1728px;
+  }
+
+}
+
+@media only screen and (min-width: 1750px) {
+
+  main section .wrapper {
+    width: 1728px;
+  }
+  
 }
