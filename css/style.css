@@ -119,7 +119,7 @@ main section, footer {
   align-items: center;
 }
 
-.skills-left-all, .skills-right-all {
+.skills-left-all {
   width: 80%;
   height: 100%;
   display: flex;
@@ -128,7 +128,7 @@ main section, footer {
   background-color:cornflowerblue;
 }
 
-.skills-left-all p, .skills-right-all p {
+.skills-left-all p {
   margin-right: 30px;
   padding: 15px;
   font-size: 50px;
@@ -148,16 +148,31 @@ main section, footer {
   font-size: 7.5em;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
   line-height: 100px;
   background-color: yellow;
 }
 
-.skills-right-title  {
-  width: 20%;
+.skills-right-all {
+  width: 80%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  background-color:cornflowerblue;
+}
+
+.skills-right-all p {
+  margin-right: 30px;
+  padding: 15px;
+  font-size: 50px;
+  border: 2px solid white;
+  border-radius: 0 40px 0 40px;
+}
+
+.skills-right-title  {
+  width: 700px;
   background-color: green;
-  align-content: flex-end;
+  display: flex;
+  align-items:center;
 }
 
 .skills-right-title p {
@@ -165,8 +180,7 @@ main section, footer {
   font-size: 7.5em;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 100px;
+  margin-left: -100px;
   background-color: yellow;
 }
 
@@ -176,10 +190,66 @@ main section, footer {
 .skills-right {
   background-color: aquamarine;
 }
-
 .skills2 {
   background-color: #FEC260;
 }
+
+.skills-left8{
+  display: flex;
+  width: 50%;
+} 
+.skills-left-all8 {
+  width: 80%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: orange;
+}
+.skills-left-title8 {
+  width: 20%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: aqua;
+  white-space: nowrap;
+}
+.skills-left-title8 p {
+  transform: rotate(90deg);
+  font-size: 7em;
+  background-color: red;
+}
+
+.skills-right8{
+  display: flex;
+  width: 50%;
+}
+.skills-right-all8 {
+  width: 80%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: orange;
+}
+.skills-right-title8 {
+  width: 20%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: aqua;
+  white-space: nowrap;
+}
+.skills-right-title8 p {
+  transform: rotate(270deg);
+  font-size: 7em;
+  background-color: red;
+}
+
+/* .teste p {
+  transform: rotate(270deg);
+  font-size: 9em;
+  margin-left: -350px;
+  background-color: red;
+} */
 
 footer {
   background-color: #222;
