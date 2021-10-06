@@ -47,6 +47,10 @@ header .header-logo:hover, header .header-headline p.welcome:hover, header .head
   color:fuchsia;
 }
 
+.header-logo:hover {
+  border: 3px solid fuchsia;
+}
+
 header .header-menu {
   display: flex;
 }
@@ -108,163 +112,63 @@ main section, footer {
   margin: 0 0 20px 0;
 }
 
+.skills2 {
+  background-color: #FEC260;
+}
+
 .skills {
   background-color: #2A0944;
   color: white;
 }
 
 .skills-left, .skills-right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-
-.skills-left-all {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  background-color:cornflowerblue;
-}
-
-.skills-left-all p {
-  margin-right: 30px;
-  padding: 15px;
-  font-size: 50px;
-  border: 2px solid white;
-  border-radius: 0 40px 0 40px;
-}
-
-.skills-left-title  {
-  width: 20%;
-  height: 100%;
-  background-color: green;
-  justify-content: center;
-}
-
-.skills-left-title p {
-  transform: rotate(90deg);
-  font-size: 7.5em;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 100px;
-  background-color: yellow;
-}
-
-.skills-right-all {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color:cornflowerblue;
-}
-
-.skills-right-all p {
-  margin-right: 30px;
-  padding: 15px;
-  font-size: 50px;
-  border: 2px solid white;
-  border-radius: 0 40px 0 40px;
-}
-
-.skills-right-title  {
-  width: 700px;
-  background-color: green;
-  display: flex;
-  align-items:center;
-}
-
-.skills-right-title p {
-  transform: rotate(270deg);
-  font-size: 7.5em;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-left: -100px;
-  background-color: yellow;
-}
-
-.skills-left {
-  background-color: #FEC260;
-}
-.skills-right {
-  background-color: aquamarine;
-}
-.skills2 {
-  background-color: #FEC260;
-}
-
-.skills-left8{
   display: flex;
   width: 50%;
 } 
-.skills-left-all8 {
+
+.skills-left-all, .skills-right-all {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-items:center;
   justify-content: center;
-  background-color: orange;
 }
-.skills-left-all8 .item {
+
+.skills-left-all .item, .skills-right-all .item {
   padding: 10px 15px 6px;
   margin: 0 15px 0 0;
   font-size: 40px;
   border: 2px solid white;
   border-radius: 0 40px 0 40px;
 }
-.skills-left-title8 {
+
+.skills-left-all .item:hover, .skills-right-all .item:hover {
+  color:fuchsia;
+  border: 2px solid fuchsia;
+}
+
+.skills-left-title, .skills-right-title {
   width: 20%;
   display: flex;
   align-items:center;
   justify-content: center;
-  background-color: aqua;
   white-space: nowrap;
+  color: #FEC260;
 }
-.skills-left-title8 p {
+
+.skills-left-title p, .skills-right-title p {
+  font-size: 7.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.skills-left-title p {
   transform: rotate(90deg);
-  font-size: 7em;
-  background-color: red;
 }
 
-.skills-right8{
-  display: flex;
-  width: 50%;
-}
-.skills-right-all8 {
-  width: 80%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  background-color: orange;
-}
-.skills-right-all8 p {
-  margin-right: 30px;
-  padding: 15px;
-  font-size: 50px;
-  border: 2px solid white;
-  border-radius: 0 40px 0 40px;
-}
-.skills-right-title8 {
-  width: 20%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  background-color: aqua;
-  white-space: nowrap;
-}
-.skills-right-title8 p {
+.skills-right-title p {
   transform: rotate(270deg);
-  font-size: 7em;
-  background-color: red;
 }
-
-/* .teste p {
-  transform: rotate(270deg);
-  font-size: 9em;
-  margin-left: -350px;
-  background-color: red;
-} */
 
 footer {
   background-color: #222;
