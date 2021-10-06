@@ -201,14 +201,15 @@ main section, footer {
 .skills-left-all8 {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   align-items:center;
   justify-content: center;
   background-color: orange;
 }
-.skills-left-all8 p {
-  margin-right: 30px;
-  padding: 15px;
-  font-size: 50px;
+.skills-left-all8 .item {
+  padding: 10px 15px 6px;
+  margin: 0 15px 0 0;
+  font-size: 40px;
   border: 2px solid white;
   border-radius: 0 40px 0 40px;
 }
