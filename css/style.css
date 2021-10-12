@@ -9,41 +9,42 @@ a {
 }
 
 h2 {
-  font-size: 60px;
-  margin-bottom: 50px;
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 1em;
 }
 
 p {
-  font-size: 30px;
-  margin: 50px 0;
-  line-height: 45px;
+  font-size: 1.9em;
+  line-height: 1.7em;
 }
 
 header {
-  /*linear-gradient(to bottom, #000f, #0005)*/
-  background: linear-gradient(to bottom, #0007, #0002), url(../img/bg01.jpg) no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2)), url(../img/bg01.jpg) no-repeat center fixed;
   background-size: cover;
   height: 100vh;
 }
 
-header .header-wrapper {
+.header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 2.2em;
 }
 
-header .header-logo {
+.header-logo {
   font-family: "Birthstone Bounce";
-  font-size: 50px;
+  font-size: 3.5em;
   font-weight: 900;
   color: white;
   border: 3px solid white;
-  border-radius: 100px;
-  width: 75px;
+  border-radius: 5em;
+  width: 1.3em;
+  line-height: 1.3em;
+  z-index: 5;
 }
 
-header .header-logo:hover, header .header-headline p.welcome:hover, header .header-menu li a:hover, .contact-left-block a:hover {
+.header-logo:hover, .header-headline p.welcome:hover, .header-menu li a:hover, .contact-left-block a:hover {
   color:fuchsia;
 }
 
@@ -51,38 +52,51 @@ header .header-logo:hover, header .header-headline p.welcome:hover, header .head
   border: 3px solid fuchsia;
 }
 
-header .header-menu {
+nav {
+  z-index: 6;
+}
+
+.header-menu {
   display: flex;
 }
 
-header .header-menu li a {
+.header-menu li a {
   margin-right: 30px;
-  font-size: 25px;
+  font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 900;
   color: white;
 }
 
-header .header-headline {
-  padding: 100px;
+.header-headline {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header .header-headline p {
-  font-size: 50px;
+.header-headline p {
+  font-size: 3em;
   text-align: center;
-  color: white;
+  color: white; 
+  align-items: center;
+  line-height: 0.6em;
 }
 
-header .header-headline p.welcome {
-  font-size: 170px;
+.header-headline p.welcome {
+  font-size: 11em;
   font-weight: 900;
   margin: 100px 0 70px;
   color: white;
+  text-transform: uppercase;
 }
 
 main section, footer {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .wrapper {
@@ -98,10 +112,10 @@ main section, footer {
 }
 
 .about-left p {
-  font-size: 110px;
+  font-size: 7em;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 75px;
+  line-height: 0.6em;
   margin: 2px 0;
 }
 
@@ -135,9 +149,9 @@ main section, footer {
 }
 
 .skills-left-all .item, .skills-right-all .item {
-  padding: 10px 15px 6px;
+  padding: 15px 20px 10px;
   margin: 0 15px 0 0;
-  font-size: 40px;
+  font-size: 2.3em;
   border: 2px solid white;
   border-radius: 0 40px 0 40px;
 }
@@ -153,13 +167,14 @@ main section, footer {
   align-items:center;
   justify-content: center;
   white-space: nowrap;
-  color: #FEC260;
 }
 
 .skills-left-title p, .skills-right-title p {
-  font-size: 7.2em;
+  font-size: 8em;
   font-weight: 900;
   text-transform: uppercase;
+  color: #FEC260;
+  margin-top: -200px;
 }
 
 .skills-left-title p {
@@ -193,8 +208,27 @@ footer a {
 
 .contact-right p {
   text-align: end;
-  font-size: 150px;
+  font-size: 10em;
   font-weight: 900;
   text-transform: uppercase;
-  line-height: 100px;
+  line-height: 0.65em;
 }
+
+.lifestyle {
+  background: linear-gradient(to bottom, rgba(34,34,34,0.6), rgba(34,34,34,1)), url(../img/mosaico2-tiny.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.lifestyle-left, .lifestyle-right {
+  width: 50%;
+  align-self: center;
+}
+
+.lifestyle-left p {
+  text-transform: uppercase;
+  font-size: 10em;
+  font-weight: 900;
+  line-height: 0.35em;
+}
+
