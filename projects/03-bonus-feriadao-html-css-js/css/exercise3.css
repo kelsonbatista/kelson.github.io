@@ -1,0 +1,197 @@
+/* Ref image ignore parent padding
+https://stackoverflow.com/questions/69533723/how-to-ignore-parent-div-padding
+*/
+
+body {
+  font-family: Roboto, sans-serif;
+  display: flex;
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+header {
+  /* float: left; */
+  width: 20%;
+  background: white;
+  /* margin: 1em 1.5em 1.5em auto;
+  padding: 0 1.5em 20em; */
+  margin: 1em 1.5em 1em auto;
+  padding: 0 0 7em;
+  color: #777;
+  box-shadow: 0.1em 0em 1.2em 0.1em #aaa;
+}
+
+header i {
+  color: #009688;
+  font-size: 1.3em;
+}
+
+.user__picture {
+  /* max-width: calc(100% + 3em); */
+  /* margin-top: -1.5em; */
+  /* margin-left: -1.5em;
+  margin-right: -1.5em; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.user__name {
+  font-size: 2em;
+  font-weight: 800;
+  margin: -1.6em 0 1em 0.5em;
+  /* padding-bottom: 1em; */
+  color: #222;
+  -webkit-text-stroke: 1px white;
+}
+
+.user__item {
+  padding: 0.8em 0;
+}
+
+.aside__divider {
+  margin: 1.3em 0 0;
+}
+
+.user__info, .skills__content, .languages__content {
+  padding: 0 1.5em;
+}
+
+.skills__title, .languages__title {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1.6em;
+}
+
+.skills__item, .languages__item {
+  padding: 2em 0;
+}
+
+.skills__meter, .languages__meter {
+  margin: 1.5em 0 -1em;
+}
+
+progress {
+  width: 100%;
+  height: 1em;
+  appearance: none;
+  margin: 1em 0 -1.7em;
+}
+
+progress::-webkit-progress-value {
+  background-color: #009688;
+  border-radius: 1em;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 1em;
+}
+
+main {
+  /* float: left; */
+  width: 65%;
+  margin-right: auto;
+  margin-top: 1em;
+  background: #f1f1f1;
+}
+
+.work, .education {
+  margin-bottom: 1em;
+  padding: 2.5em;
+  background-color:white;
+  box-shadow: 0.1em 0 1.2em 0.1em #bbb;
+}
+
+.work i, .education i {
+  color: #009688;
+}
+
+.work__title, .education__title {
+  padding: 1em 0;
+  margin-top: -0.9em;
+  font-size: 1.8em;
+}
+
+.work__title i, .education__title i {
+  font-size: 1.4em;
+}
+
+.work__position, .education__school {
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.work__date, .education__date {
+  color: #009688;
+  padding: 1.1em 0;
+  margin-top: -0.9em;
+}
+
+.work__date-current {
+  background: #009688;
+  color: white;
+  padding: 0.1em 0.4em;
+}
+
+.work__description, .education__description {
+  line-height: 1.5em;
+  padding-bottom: 0.4em;
+}
+
+.work__divider, .education__divider {
+  margin: 1.2em 0;
+  border: 1px solid #eee;
+}
+
+@media (max-width: 900px) {
+
+  body {
+    display: block;
+  }
+
+  header {
+    width: 85%;
+    position: relative;
+    margin: 1em auto 1.5em;
+    /* padding: 0 0 7em; */
+  }
+
+  /* .user__picture {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+
+  .user__name {
+    font-size: 2.2em;
+  }
+
+  .user__info, .skills__content, .languages__content {
+    padding: 0 1.5em;
+  }
+
+  main {
+    width: 85%;
+    position: relative;
+    margin: 1em auto 1.5em auto;
+  }
+
+  .space {
+    display: none;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 1300px) {
+
+  header {
+    width: 25%;
+  }
+
+  main {
+    width: 60%;
+  }
+
+}
