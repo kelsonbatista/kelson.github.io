@@ -91,6 +91,10 @@ strong {
   font-weight: 900;
 }
 
+.table__link:hover {
+  background-color: #63c267;
+}
+
 @media (max-width: 850px) {
   .table {
     display: inline-block;
