@@ -6,20 +6,31 @@ body {
   width: 85%;
   margin: auto;
   text-align: center;
- 
+}
+
+.header__title {
+  padding: 1.5em 0;
+}
+
+.exercises {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .exercises__content {
-  height: 80vh;
+  width: 33%;
+  height: 40vh;
   overflow: hidden;
-}
-
-.exercises__title {
-  padding-top: 50px;
+  margin-right: 2em;
+  border: 1px solid #ccc;
+  /* background: yellow; */
 }
 
 .exercises__image {
-  width: 100%;
+  width: 200%;
+  /* object-fit: cover; */
 }
 
 .footer__copyright {
