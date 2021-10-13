@@ -102,14 +102,14 @@ main section, footer section {
   justify-content: center;
 }
 
-.about, .skills, .lifestyle, .contact {
+.about, .skills, .projects, .lifestyle, .contact {
   height: 100vh;
   width: 100vw;
   margin: auto;
   padding: 4em 1em;
 }
 
-.about__content, .skills__content, .lifestyle__content, .contact__content {
+.about__content, .skills__content, .projects__content, .lifestyle__content, .contact__content {
   width: 85%;
   display: flex;
   align-items: center;
@@ -210,6 +210,31 @@ main section, footer section {
   background-color: #FEC260;
 }
 
+.projects__content {
+  height: 100%;
+}
+
+.projects__info {
+  display: flex;
+  align-self: flex-start;
+  text-align: center;
+  background-color: green;
+}
+
+.projects__title {
+  display: block;
+  background-color: aqua;
+}
+
+.projects__item {
+  max-width: 33%;
+  min-width: 20%;
+  background-color: yellow;
+}
+
+.projects__image {
+  width: 100%;
+}
 
 .lifestyle {
   background: linear-gradient(to bottom, rgba(34,34,34,0.6), rgba(34,34,34,1)), url(../img/mosaico2-tiny.jpg) no-repeat center;
