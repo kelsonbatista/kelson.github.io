@@ -25,14 +25,14 @@ header {
   height: 100vh;
 }
 
-.header-wrapper {
+.top__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.2em;
 }
 
-.header-logo {
+.top__logo {
   font-family: "Birthstone Bounce";
   font-size: 3.5em;
   font-weight: 900;
@@ -44,11 +44,11 @@ header {
   z-index: 5;
 }
 
-.header-logo:hover, .header-headline p.welcome:hover, .header-menu li a:hover, .contact-left-block a:hover {
+.top__logo:hover, .top__item:hover, .headline__content p:nth-child(2):hover, .contact-left-block a:hover {
   color:fuchsia;
 }
 
-.header-logo:hover {
+.top__logo:hover {
   border: 3px solid fuchsia;
 }
 
@@ -56,11 +56,11 @@ nav {
   z-index: 6;
 }
 
-.header-menu {
+.top__menu {
   display: flex;
 }
 
-.header-menu li a {
+.top__item {
   margin-right: 30px;
   font-size: 1.8em;
   text-transform: uppercase;
@@ -68,7 +68,7 @@ nav {
   color: white;
 }
 
-.header-headline {
+.headline {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -78,40 +78,49 @@ nav {
   justify-content: center;
 }
 
-.header-headline p {
-  font-size: 3em;
+.headline__content {
   text-align: center;
-  color: white; 
-  align-items: center;
-  line-height: 0.6em;
 }
 
-.header-headline p.welcome {
+.headline__item {
+  font-size: 3em;
+  color: white; 
+  line-height: 1.5em;
+}
+
+.headline__content p:nth-child(2) {
   font-size: 11em;
   font-weight: 900;
-  margin: 100px 0 70px;
   color: white;
   text-transform: uppercase;
+  margin-bottom: -0.2em;
 }
 
-main section, footer {
+main section, footer section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about, .skills, .lifestyle, .contact {
   height: 100vh;
   width: 100vw;
-}
-
-.wrapper {
-  display: flex;
-  height: 100vh;
-  width: 85%;
   margin: auto;
-  padding: 100px 30px;
+  padding: 4em 1em;
 }
 
-.about-right {
-  margin-left: 150px;
+.about__content, .skills__content, .lifestyle__content, .contact__content {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-left p {
+.about__info {
+  margin-left: 10em;
+}
+
+.about__user-title {
   font-size: 7em;
   font-weight: 900;
   text-transform: uppercase;
@@ -119,15 +128,23 @@ main section, footer {
   margin: 2px 0;
 }
 
-.about-left img {
+.about__user-picture {
   width: 380px;
   border: 10px solid #222;
   border-radius: 0 180px 0 180px;
   margin: 0 0 20px 0;
 }
 
-.skills2 {
-  background-color: #FEC260;
+.about__info {
+  align-self: flex-start;
+}
+
+.about__info i {
+  margin: 0 0.1em;
+}
+
+.about__link {
+  color: #222;
 }
 
 .skills {
@@ -135,84 +152,64 @@ main section, footer {
   color: white;
 }
 
-.skills-left, .skills-right {
+.skills__content {
+  display: flex;
+  height: 100%;
+}
+
+.skills__hard, .skills__soft {
   display: flex;
   width: 50%;
-} 
+  height: 100%;
+}
 
-.skills-left-all, .skills-right-all {
+.skills__list {
   width: 80%;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
   align-items:center;
   justify-content: center;
+  padding: 5em 0;
 }
 
-.skills-left-all .item, .skills-right-all .item {
-  padding: 15px 20px 10px;
-  margin: 0 15px 0 0;
+.skills__item {
+  padding: 0.5em 0.9em 0.3em;
+  margin-right: 0.5em;
   font-size: 2.3em;
   border: 2px solid white;
-  border-radius: 0 40px 0 40px;
+  border-radius: 0 50px 0 50px;
 }
 
-.skills-left-all .item:hover, .skills-right-all .item:hover {
+.skills__item:hover {
   color:fuchsia;
   border: 2px solid fuchsia;
 }
 
-.skills-left-title, .skills-right-title {
+.skills__title {
   width: 20%;
   display: flex;
   align-items:center;
   justify-content: center;
   white-space: nowrap;
-}
-
-.skills-left-title p, .skills-right-title p {
   font-size: 8em;
   font-weight: 900;
   text-transform: uppercase;
+  padding-top: 0.2em;
   color: #FEC260;
-  margin-top: -200px;
 }
 
-.skills-left-title p {
+.skills__hard .skills__title {
   transform: rotate(90deg);
 }
 
-.skills-right-title p {
+.skills__soft .skills__title {
   transform: rotate(270deg);
 }
 
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
+.projects {
+  background-color: #FEC260;
 }
 
-footer i {
-  margin: 0 10px;
-}
-
-footer a {
-  color: white;
-}
-
-.contact-left, .contact-right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-right p {
-  text-align: end;
-  font-size: 10em;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 0.65em;
-}
 
 .lifestyle {
   background: linear-gradient(to bottom, rgba(34,34,34,0.6), rgba(34,34,34,1)), url(../img/mosaico2-tiny.jpg) no-repeat center;
@@ -220,15 +217,88 @@ footer a {
   color: white;
 }
 
-.lifestyle-left, .lifestyle-right {
+.lifestyle__info, .lifestyle__headline {
   width: 50%;
-  align-self: center;
 }
 
-.lifestyle-left p {
+.lifestyle__headline-text {
   text-transform: uppercase;
   font-size: 10em;
   font-weight: 900;
-  line-height: 0.35em;
+  line-height: 0.65em;
+}
+
+.contact, .copyright {
+  background-color: #222;
+  color: white;
+}
+
+.contact__content {
+  height: 100%;
+}
+
+.contact__info {
+  text-align: left;
+  align-self: center;
+}
+
+.contact__info {
+  width: 50%;
+}
+
+.contact__headline {
+  width: 50%;
+  padding-left: 20%;
+}
+
+.contact__field {
+  padding-bottom: 1.5em;
+}
+
+.contact__field label {
+  font-size: 1.7em;
+  text-align: left;
+  display: block;
+}
+
+.contact__field input, .contact__field textarea {
+  width: 95%;
+  border: 2px solid #888;
+  border-radius: 0.3em;
+  background: #ddd;
+  padding: 0.7em;
+  margin: 0.5em 0 1.5em ;
+  font-size: 1.4em;
+}
+
+.contact__field textarea {
+  height: 8em;
+  font-size: 1.6em;
+}
+
+.contact__field button {
+  font-size: 1.7em;
+  width: 100%;
+  padding: 0.8em;
+  background-color: #FEC260;
+  border-radius: 0.3em;
+}
+
+.contact__field button:hover {
+  background-color: #ffd591;
+}
+
+.contact__headline-text {
+  text-align: end;
+  font-size: 10em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.65em;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  height: 6em;
 }
 
