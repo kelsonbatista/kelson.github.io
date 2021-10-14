@@ -1,0 +1,56 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #dddddd;
+}
+
+.container-fluid {
+    padding: 20px 0;
+}
+
+
+.quemsomos img, .servicos img, .parceiros img, .contato img {
+    padding: 20px 0;
+    width: 40%;
+}
+
+.quemsomos {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.servicos {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.servicos img {
+    width: 100%;
+}
+
+.servicos .col-lg-6 {
+    padding: 100px;
+}
+
+.parceiros {
+    background-color: #eeeeee;
+}
+
+.parceiros img{
+    width: 80%;
+}
+
+.contato {
+    background-color: #ffffff;
+}
+
+
+footer {
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}

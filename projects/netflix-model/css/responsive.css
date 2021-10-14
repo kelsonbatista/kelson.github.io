@@ -1,0 +1,63 @@
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .logo {
+        font-size: 40px;
+    }
+
+    .destaque {
+        justify-content: center;
+    }
+
+    .destaque .titulo {
+        font-size: 30px;
+    }
+
+    .destaque .descricao {
+        font-size: 16px;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 280px;
+        height: 50px;
+    }
+
+    .destaque .container {
+        margin-left: 15px;
+        width: 80%;
+    }
+
+    .destaque .info {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .watchnow .content {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 400px;
+        height: 225px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1100px){
+    .watchnow .content {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 700px;
+        height: 394px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .destaque .descricao {
+        width: 80%;
+    }
+
+}
