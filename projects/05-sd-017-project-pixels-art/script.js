@@ -1,4 +1,4 @@
-let colorsQty = 4;
+let colorsQty = 8;
 const colorFirst = ['black'];
 // random color https://flaviocopes.com/how-to-shuffle-array-javascript/
 let colorRand = ['red', 'blue', 'green', 'orange', 'yellow', 'purple', 'lime', 'pink'];
