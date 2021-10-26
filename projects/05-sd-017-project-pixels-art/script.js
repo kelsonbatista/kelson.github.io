@@ -100,7 +100,7 @@ colorsDiv.appendChild(btnGenerateBoard);
 
 function setBoardSize() {
   const sizeNumber = document.querySelector('#board-size');
-  if (sizeNumber.value === '') {
+  if ((sizeNumber.value === '') || (sizeNumber.value < 5) || (sizeNumber.value > 50)){
     alert('Invalid Board Size!');
   } else {
     const element = document.querySelector('#pixel-board');
