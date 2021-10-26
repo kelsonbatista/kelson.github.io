@@ -93,7 +93,7 @@ btnBoardSize.maxLength = 2;
 btnBoardSize.min = 1;
 const btnGenerateBoard = document.createElement('button');
 btnGenerateBoard.id = 'generate-board';
-btnGenerateBoard.innerText = 'VQV';
+btnGenerateBoard.innerText = 'Set Board Size';
 const colorsDiv = document.querySelector('.colors');
 colorsDiv.appendChild(btnBoardSize);
 colorsDiv.appendChild(btnGenerateBoard);
@@ -101,7 +101,7 @@ colorsDiv.appendChild(btnGenerateBoard);
 function setBoardSize() {
   const sizeNumber = document.querySelector('#board-size');
   if (sizeNumber.value === '') {
-    alert('Board inválido!');
+    alert('Invalid Board Size!');
   } else {
     const element = document.querySelector('#pixel-board');
     element.remove();
@@ -115,7 +115,7 @@ btnGenerateBoard.addEventListener('click', setBoardSize);
 
 const btnClear = document.createElement('button');
 btnClear.id = 'clear-board';
-btnClear.innerText = 'Limpar';
+btnClear.innerText = 'Reset';
 colorsDiv.appendChild(btnClear);
 
 function clearBoard() {
