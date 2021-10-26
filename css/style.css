@@ -236,7 +236,7 @@ main section, footer section {
 }
 
 .projects__item {
-  width: 23%;
+  width: 30%;
   /* min-width: 15%; */
   height: 40vh;
   overflow: hidden;
@@ -256,6 +256,20 @@ div.projects__item:nth-of-type(2) .projects__image,
 div.projects__item:nth-of-type(3) .projects__image  
 {
   width: 200%;
+  /* border: 5px solid red; */
+  /* border-radius: 0 180px 0 180px; */
+}
+
+div.projects__item:nth-of-type(5) .projects__image
+{
+  width: 120%;
+  /* border: 5px solid red; */
+  /* border-radius: 0 180px 0 180px; */
+}
+
+div.projects__item:nth-of-type(4) .projects__image
+{
+  width: 100%;
   /* border: 5px solid red; */
   /* border-radius: 0 180px 0 180px; */
 }
