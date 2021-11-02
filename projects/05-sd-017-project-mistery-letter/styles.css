@@ -19,6 +19,8 @@
 
 .input__content {
   margin: 100px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .letter__content {
@@ -33,7 +35,7 @@
 }
 
 .input__submit {
-  padding: 14px 50px;
+  padding: 11px 50px;
   margin-left: 20px;
   font-size: 19px;
   font-weight: 700;
