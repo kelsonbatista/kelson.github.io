@@ -26,28 +26,37 @@ function newGame(newLevel) {
     theBall.style.backgroundColor = color;
     setColor.push(color);
     colorBalls.appendChild(theBall);
-    divAnswer.innerHTML = 'Escolha uma cor';
+    divAnswer.style.backgroundColor = '';
+    divAnswer.style.color = 'black';
+    divAnswer.innerHTML = 'Choose a color';
   }
   const divLevel = document.querySelector('#level');
-  divLevel.innerHTML = `Nível de dificuldade: ${setLevel}`;
+  divLevel.innerHTML = `Dificulty level: ${setLevel}`;
   const pickColor = Math.floor(Math.random() * setColor.length);
   divRGB.innerHTML = setColor[pickColor];
 }
 newGame();
+stopConfetti();
 
 /* The balls are waiting for a click, which will be counted only once per correct answer, that means the score will be added once if the answer is corrected.
 */
 let clicked = false;
 colorBalls.addEventListener('click', (event) => {
   if (event.target.style.backgroundColor === divRGB.innerHTML) {
-    divAnswer.innerHTML = 'Acertou!';
+    divAnswer.style.backgroundColor = 'red';
+    divAnswer.style.color = 'white';
+    divAnswer.innerHTML = 'YOU WIN!';
+    startConfetti();
     if (clicked === false) {
       myScore += 3;
       clicked = true;
     }
-    divScore.innerHTML = `Pontos: ${myScore}`;
+    divScore.innerHTML = `Points: ${myScore}`;
   } else {
-    divAnswer.innerHTML = 'Errou! Tente novamente!';
+    divAnswer.style.backgroundColor = '';
+    divAnswer.style.color = 'black';
+    divAnswer.innerHTML = 'Wrong! Try again!';
+    stopConfetti();
   }
 });
 
@@ -68,6 +77,7 @@ function resetGame(newLevel, oldLevel) {
     }
   }
   newGame(newL);
+  stopConfetti();
 }
 
 const btnReset = document.querySelector('#reset-game');

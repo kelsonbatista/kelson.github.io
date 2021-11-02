@@ -19,8 +19,10 @@
 }
 
 .top__title {
-  font-size: 32px;
-  padding-bottom: 50px;
+  font-size: 42px;
+  padding-bottom: 100px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .colors__content {
@@ -36,6 +38,7 @@
   border-radius: 250px;
   margin: 10px;
   margin-top: 30px;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .buttons__reset {
@@ -43,11 +46,20 @@
   font-size: 20px;
   font-weight: 700;
   margin: 30px 10px 0;
-  border-radius: 5px;
+  border-radius: 100px;
+  box-shadow: 5px 5px 15px grey;
 }
 
 .check__content {
   font-size: 20px;
   font-weight: 700;
   margin-top: 30px;
+}
+
+.check__answer {
+  font-size: 24px;
+}
+
+#confetti-canvas {
+  margin-top: -75vh;
 }
