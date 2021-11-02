@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mistery Letter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <section class="top">
+      <div class="top__content">
+        <h1 class="top__title">Mistery Letter</h1>
+        <p class="top__quantity" >Palavras:&nbsp;</p><p class="top__quantity" id="carta-contador">0</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="input">
+      <div class="input__content">
+        <input type="text" name="type-letter" class="input__text" id="carta-texto">
+        <button type="submit" class="input__submit" id="criar-carta">Criar Carta</button>
+      </div>
+    </section>
+
+    <section class="letter">
+      <div class="letter__content">
+        <p class="letter__letter" id="carta-gerada"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
