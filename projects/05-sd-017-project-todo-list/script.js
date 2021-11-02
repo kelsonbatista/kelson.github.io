@@ -50,7 +50,7 @@ document.addEventListener('click', (event) => {
       event.target.classList[0] !== 'addtask__text' &&
       event.target.classList[0] !== 'addtask__add' &&
       event.target.classList[0] !== 'btncontrols__btn' &&
-      event.target.classList[0] !== 'fas'
+      event.target.classList[0].contains('fas')
       ) {
     for (let i = 0; i < todoListItem.length; i += 1) {
       todoListItem[i].classList.remove('selected');
