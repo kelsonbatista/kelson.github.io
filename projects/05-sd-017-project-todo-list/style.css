@@ -45,7 +45,7 @@ body {
 }
 
 .selected {
-  background-color: grey;
+  background-color: #888;
 }
 
 .completed {
