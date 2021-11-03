@@ -236,7 +236,7 @@ main section, footer section {
 }
 
 .projects__item {
-  width: 30%;
+  width: 20%;
   /* min-width: 15%; */
   height: 40vh;
   overflow: hidden;
@@ -278,8 +278,12 @@ div.projects__item:nth-of-type(6) .projects__image,
 }
 
 div.projects__item:nth-of-type(9) .projects__image,
+div.projects__item:nth-of-type(10) .projects__image,
+div.projects__item:nth-of-type(11) .projects__image,
+div.projects__item:nth-of-type(12) .projects__image,
 {
-  width: 300%;
+  width: 20%;
+  border: 5px solid red;
 }
 
 .lifestyle {
