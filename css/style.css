@@ -212,7 +212,7 @@ main section, footer section {
 }
 
 .projects__content {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .projects__info {
@@ -229,19 +229,26 @@ main section, footer section {
 
 .projects__group {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
 }
 
-.projects__item {
+.projects__link {
+  background-color: #2A0944;
+  color: white;
   width: 20%;
-  /* min-width: 15%; */
-  height: 40vh;
   overflow: hidden;
+  padding: 10px 20px 5px;
   margin-bottom: 3em;
   margin-right: 1%;
+  border: 2px solid fuchsia;
+  border-radius: 0 80px 0 80px;
+}
+
+.projects__link:hover {
+  background-color: #3e125f;
+  border-radius: 80px 0 80px 0;
 }
 
 .projects__category {
@@ -251,40 +258,31 @@ main section, footer section {
 }
 
 /* .projects__info div:nth-child(1)  */
-div.projects__item:nth-of-type(1) .projects__image,
+/* div.projects__item:nth-of-type(1) .projects__image,
 div.projects__item:nth-of-type(2) .projects__image,
-div.projects__item:nth-of-type(3) .projects__image,
-{
+div.projects__item:nth-of-type(3) .projects__image {
   width: 200%;
-  /* border: 5px solid red; */
-  /* border-radius: 0 180px 0 180px; */
+
 }
 
 div.projects__item:nth-of-type(5) .projects__image,
 div.projects__item:nth-of-type(7) .projects__image,
-div.projects__item:nth-of-type(8) .projects__image,
-{
+div.projects__item:nth-of-type(8) .projects__image {
   width: 120%;
-  /* border: 5px solid red; */
-  /* border-radius: 0 180px 0 180px; */
 }
 
 div.projects__item:nth-of-type(4) .projects__image,
-div.projects__item:nth-of-type(6) .projects__image,
-{
+div.projects__item:nth-of-type(6) .projects__image {
   width: 100%;
-  /* border: 5px solid red; */
-  /* border-radius: 0 180px 0 180px; */
 }
 
 div.projects__item:nth-of-type(9) .projects__image,
 div.projects__item:nth-of-type(10) .projects__image,
 div.projects__item:nth-of-type(11) .projects__image,
-div.projects__item:nth-of-type(12) .projects__image,
-{
-  width: 20%;
+div.projects__item:nth-of-type(12) .projects__image {
+  width: 100%;
   border: 5px solid red;
-}
+} */
 
 .lifestyle {
   background: linear-gradient(to bottom, rgba(34,34,34,0.6), rgba(34,34,34,1)), url(../img/mosaico2-tiny.jpg) no-repeat center;
