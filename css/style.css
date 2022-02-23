@@ -1,3 +1,379 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Geomanist', arial, sans-serif;
+  color: #222;
+  background-color: #eee;
 }
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1.9em;
+  line-height: 1.7em;
+}
+
+header {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7),rgba(0,0,0,0.2)), url(../img/bg01.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.top__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2em;
+}
+
+.top__logo {
+  font-family: "Birthstone Bounce";
+  font-size: 3.5em;
+  font-weight: 900;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5em;
+  width: 1.3em;
+  line-height: 1.3em;
+  z-index: 5;
+}
+
+.top__logo:hover, .top__item:hover, .headline__content p:nth-child(2):hover, .contact-left-block a:hover {
+  color:fuchsia;
+}
+
+.top__logo:hover {
+  border: 3px solid fuchsia;
+}
+
+nav {
+  z-index: 6;
+}
+
+.top__menu {
+  display: flex;
+}
+
+.top__item {
+  margin-right: 30px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+}
+
+.headline {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headline__content {
+  text-align: center;
+}
+
+.headline__item {
+  font-size: 3em;
+  color: white; 
+  line-height: 1.5em;
+}
+
+.headline__content p:nth-child(2) {
+  font-size: 11em;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: -0.2em;
+}
+
+main section, footer section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about, .skills, .projects, .lifestyle, .contact {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  padding: 4em 1em;
+}
+
+.about__content, .skills__content, .projects__content, .lifestyle__content, .contact__content {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__info {
+  margin-left: 10em;
+}
+
+.about__user-title {
+  font-size: 7em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.6em;
+  margin: 2px 0;
+}
+
+.about__user-picture {
+  width: 380px;
+  border: 10px solid #222;
+  border-radius: 0 180px 0 180px;
+  margin: 0 0 20px 0;
+}
+
+.about__info {
+  align-self: flex-start;
+}
+
+.about__info i {
+  margin: 0 0.1em;
+}
+
+.about__link {
+  color: #222;
+}
+
+.skills {
+  background-color: #2A0944;
+  color: white;
+}
+
+.skills__content {
+  display: flex;
+  height: 100%;
+}
+
+.skills__hard, .skills__soft {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.skills__list {
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 5em 0;
+}
+
+.skills__item {
+  padding: 0.5em 0.9em 0.3em;
+  margin-right: 0.5em;
+  font-size: 2.3em;
+  border: 2px solid white;
+  border-radius: 0 50px 0 50px;
+}
+
+.skills__item:hover {
+  color:fuchsia;
+  border: 2px solid fuchsia;
+}
+
+.skills__title {
+  width: 20%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 8em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 0.2em;
+  color: #FEC260;
+}
+
+.skills__hard .skills__title {
+  transform: rotate(90deg);
+}
+
+.skills__soft .skills__title {
+  transform: rotate(270deg);
+}
+
+.projects {
+  height: 100%;
+  background-color: #FEC260;
+}
+
+.projects__content {
+  min-height: 100vh;
+}
+
+.projects__info {
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
+.projects__title {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.projects__group {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.projects__link {
+  background-color: #2A0944;
+  color: white;
+  width: 20%;
+  overflow: hidden;
+  padding: 10px 20px 5px;
+  margin-bottom: 3em;
+  margin-right: 1%;
+  border: 2px solid fuchsia;
+  border-radius: 0 80px 0 80px;
+}
+
+.projects__link:hover {
+  background-color: #3e125f;
+  border-radius: 80px 0 80px 0;
+}
+
+.projects__category {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: -0.3em 0 0.3em;
+}
+
+/* .projects__info div:nth-child(1)  */
+/* div.projects__item:nth-of-type(1) .projects__image,
+div.projects__item:nth-of-type(2) .projects__image,
+div.projects__item:nth-of-type(3) .projects__image {
+  width: 200%;
+
+}
+
+div.projects__item:nth-of-type(5) .projects__image,
+div.projects__item:nth-of-type(7) .projects__image,
+div.projects__item:nth-of-type(8) .projects__image {
+  width: 120%;
+}
+
+div.projects__item:nth-of-type(4) .projects__image,
+div.projects__item:nth-of-type(6) .projects__image {
+  width: 100%;
+}
+
+div.projects__item:nth-of-type(9) .projects__image,
+div.projects__item:nth-of-type(10) .projects__image,
+div.projects__item:nth-of-type(11) .projects__image,
+div.projects__item:nth-of-type(12) .projects__image {
+  width: 100%;
+  border: 5px solid red;
+} */
+
+.lifestyle {
+  background: linear-gradient(to bottom, rgba(34,34,34,0.6), rgba(34,34,34,1)), url(../img/mosaico2-tiny.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.lifestyle__info, .lifestyle__headline {
+  width: 50%;
+}
+
+.lifestyle__headline-text {
+  text-transform: uppercase;
+  font-size: 10em;
+  font-weight: 900;
+  line-height: 0.65em;
+}
+
+.contact, .copyright {
+  background-color: #222;
+  color: white;
+}
+
+.contact__content {
+  height: 100%;
+}
+
+.contact__info {
+  text-align: left;
+  align-self: center;
+}
+
+.contact__info {
+  width: 50%;
+}
+
+.contact__headline {
+  width: 50%;
+  padding-left: 20%;
+}
+
+.contact__field {
+  padding-bottom: 1.5em;
+}
+
+.contact__field label {
+  font-size: 1.7em;
+  text-align: left;
+  display: block;
+}
+
+.contact__field input, .contact__field textarea {
+  width: 95%;
+  border: 2px solid #888;
+  border-radius: 0.3em;
+  background: #ddd;
+  padding: 0.7em;
+  margin: 0.5em 0 1.5em ;
+  font-size: 1.4em;
+}
+
+.contact__field textarea {
+  height: 8em;
+  font-size: 1.6em;
+}
+
+.contact__field button {
+  font-size: 1.7em;
+  width: 100%;
+  padding: 0.8em;
+  /* background-color: #FEC260; */
+  background-color: white;
+  border-radius: 0.3em;
+}
+
+.contact__field button:hover {
+  /* background-color: #ffd591; */
+  background-color: fuchsia;
+}
+
+.contact__headline-text {
+  text-align: end;
+  font-size: 10em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.65em;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  height: 6em;
+}
+

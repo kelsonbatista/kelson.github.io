@@ -1,0 +1,208 @@
+/* Declaração de variáveis
+Em vez de trocar uma a uma, basta alterar somente a variável*/
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* já é configuração padrao*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial', Times;
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/* FILME PRINCIPAL */
+.destaque .container {
+    margin-left: 60px;
+    width: 70%;
+}
+
+.destaque {
+    font-size:24px;
+    background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.1)100%), url('../img/destaque5.jpg');
+    background-size: cover;
+    background-position-x: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.destaque .titulo {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 15%;
+}
+
+.destaque .info {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.destaque .info i {
+    color: var(--vermelho);
+}
+
+.destaque .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.destaque .botao {
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.5);
+    border:none;
+    color: #ffffff;
+    padding: 15px 50px;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 300px;
+    height: 50px;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+
+
+/* OUTROS FILMES */
+
+.carrosel .titulo {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.filmes {
+    height: 50%;
+    width: 50%;
+    display: block;
+}
+
+/* MODAL */
+.watchnow {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    z-index: 100;
+}
+
+.watchnow .content {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1024px;
+    height: 576px;
+}
+
+.watchnow .content i {
+    color: var(--vermelho);
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.watchnow-show {
+    transform: scale(1.0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.moreinfo {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    z-index: 100;
+}
+
+.moreinfo .content {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size:20px;
+}
+
+.moreinfo .content i {
+    color: var(--vermelho);
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.moreinfo-show {
+    transform: scale(1.0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* FOOTER */
+footer {
+    height: 300px;
+    background-color: #222222;
+}
+
